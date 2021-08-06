@@ -1,0 +1,108 @@
+:root{
+    --primary-color: #008248;
+    --background-color: #000000;
+}
+
+body{
+    margin: 0;
+    font-family: SoDoSans,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight:400;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+/* ------ HEADER SECTION ------ */
+
+header{
+    position: relative;
+    z-index: 10;
+    height: 101px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%), 0 0 2px rgb(0 0 0 / 7%);
+}
+.header-container{
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.left-nav{
+    display: flex;
+    align-items: center;
+}
+.navBar ul{
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+.navBar ul li{
+    padding-left: 24px;
+    text-transform: uppercase;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.logo{
+    margin-left: 24px;
+    padding-left: 24px;
+    height: 51px;
+    width: 51px;
+}
+.logo img{
+    height: 100%;
+}
+.navBar ul li:hover{
+    color: var(--primary-color);
+}
+.right-nav{
+    display: flex;
+    align-items: center;
+}
+.find-store{
+    margin-right: 40px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.find-store i{
+    padding-right: 8px;
+    font-size: 24px;
+}
+.sign-in, .join-now{
+    padding: 7px 16px;
+    border: 1px solid black;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+.sign-in{
+    margin-right: 16px;
+}
+
+.join-now{
+    background-color: var(--background-color);
+    color: #fff;
+    margin-right: 24px;
+}
+.join-now:hover{
+    background-color: rgba(0,0,0,.7);
+    border-color: rgba(0,0,0,.7);
+}
+.sign-in:hover{
+    background-color: rgba(0,0,0,.06);
+}
+.find-store:hover{
+    color: var(--primary-color);
+}
+
+
+
